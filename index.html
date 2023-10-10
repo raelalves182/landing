@@ -13,8 +13,8 @@
 </head>
 <body>
   <header class="header">
-    <div class="wrap container-fluid">
-      <div class="row middle-xs">
+    <div class="wrap container">
+      <div class="row between-xs middle-xs">
         <div class="col-xs-12 col-sm-8 col-md-6 col-lg-4">
           <div class="header-logo">
             <a href="javascript:;" title="loopstudios">loopstudios</a>
@@ -22,7 +22,7 @@
         </div>
 
         <div class="col-xs col-xs-6">
-          <nav class="header-menu">
+          <nav class="header-menu hide-mobile">
             <ul>
               <li><a href="javascript:;" title="About">About</a></li>
               <li><a href="javascript:;" title="Careers">Careers</a></li>
@@ -32,6 +32,30 @@
             </ul>
           </nav>
         </div>
+
+        <!-- Menu Mobile -->
+        <div class="col-xs col-xs-6 end-xs">
+          <nav class="menu-mobile hide-desktop">
+            <div class="open-menu">
+              <button>
+                <img src="images/icon-hamburger.svg" alt="">
+              </button>
+            </div>
+            <div class="close-menu">
+              <button>
+                <img src="images/icon-close.svg" alt="">
+              </button>
+            </div>
+            <ul class="menu-links">
+              <li><a href="javascript:;" title="About">About</a></li>
+              <li><a href="javascript:;" title="Careers">Careers</a></li>
+              <li><a href="javascript:;" title="Events">Events</a></li>
+              <li><a href="javascript:;" title="Products">Products</a></li>
+              <li><a href="javascript:;" title="Support">Support</a></li>
+            </ul>
+          </nav>
+        </div>
+        <!-- End menu Mobile -->
 
         <div class="col-xs-12 col-sm-12">
           <div class="header-banner">
@@ -44,7 +68,7 @@
 
   <main>
     <section>
-      <div class="wrap container-fluid">
+      <div class="wrap container">
         <div class="row">
           <div class="col-sm-12 col-xs-12 col-md-12">
             <div class="about-block">
@@ -69,7 +93,7 @@
     </section>
 
     <section>
-      <div class="wrap container-fluid">
+      <div class="wrap container">
         <div class="row">
           <div class="col-xs col-xs-12">
             <div class="section__title">
@@ -126,7 +150,7 @@
   </main>
 
   <footer class="footer">
-    <div class="wrap container-fluid">
+    <div class="wrap container">
       <div class="row">
         <div class="col-12 col-xs-12">
           <div class="footer-menu">
@@ -185,6 +209,8 @@
       </div>
     </div>
   </footer>
+
+  <script src="libs/application.js"></script>
 
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.

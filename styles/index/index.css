@@ -186,6 +186,48 @@ ul {
   padding: 5px 0;
 }
 
+.open-menu button,
+.close-menu button {
+  background: transparent;
+  border: 2px solid transparent;
+  padding: 4px;
+  cursor: pointer;
+  transition: 0.3s ease-out;
+}
+.open-menu button:hover,
+.close-menu button:hover {
+  background: #000;
+  border: 2px solid purple;
+  border-radius: 4px;
+}
+
+.close-menu {
+  display: none;
+}
+
+.menu-links {
+  display: none;
+  padding: 24PX;
+}
+.menu-links li {
+  margin-bottom: 12px;
+}
+.menu-links li a {
+  color: #fff;
+  text-decoration: none;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+@media (min-width: 1024px) {
+  .hide-desktop {
+    display: none;
+  }
+}
+@media (max-width: 1024px) {
+  .hide-mobile {
+    display: none;
+  }
+}
 @media (max-width: 1000px) {
   .about-block {
     position: unset;
